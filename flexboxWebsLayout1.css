@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: tomato;
+    height: 15vh;
+}
+
+footer {
+    background-color: tomato;
+    height: 15vh;
+}
+
+.main {
+    display: flex;
+    flex: 1;
+}
+
+.main>article {
+    background-color: mistyrose;
+    flex: 1;
+    order: 1;
+}
+
+.main>nav {
+    background-color: sienna;
+    color: wheat;
+    order: 3;
+}
+
+.main>aside {
+    background-color: tan;
+    order: 2;
+    flex-basis: 15vw;
+}
+
+header,
+article,
+aside,
+nav,
+footer {
+    padding: 1em;
+}
