@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    margin: 0;
+}
+
+nav {
+    background-color: sienna;
+    color: wheat;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.main>header {
+    background-color: tomato;
+    height: 15vh;
+}
+
+.main>footer {
+    background-color: tomato;
+    height: 15vh;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}
+
+.content>article {
+    background-color: mistyrose;
+    flex: 1;
+    order: 1;
+}
+
+.content>aside {
+    background-color: tan;
+    order: 2;
+    flex-basis: 15vw;
+}
+
+header,
+article,
+aside,
+nav,
+footer {
+    padding: 1em;
+}
